@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-import java.time.LocalDate;
 import java.util.Random;
 
 @Getter
@@ -19,7 +18,7 @@ public class Autore {
     private String avatar;
 
 
-    public Autore(String nome, String cognome, String email, String dataDiNascita, String avatar) {
+    public Autore(String nome, String cognome, String email, String dataDiNascita) {
         Random rndm = new Random();
         this.id = rndm.nextInt(1, 1000);
         this.nome = nome;
